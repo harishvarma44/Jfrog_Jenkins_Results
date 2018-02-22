@@ -1,0 +1,48 @@
+Started by user [8mha:////4LccMRqJAZfPyWON9fkRvYRX3weblyA6YXCrzWGAA+Q0AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9jMSizOIMAGkBSanBAAAA[0mharishvarma
+Building in workspace /root/.jenkins/workspace/Deploy_Mavenproj
+[Deploy_Mavenproj] $ /bin/sh -xe /opt/tomcat/tomcat9/temp/jenkins622084913137804880.sh
++ server=http://192.168.58.201:8081/artifactory
++ repo=libs-snapshot-local
++ name=multi1
++ artifact=org/jfrog/test/multi1
++ path=http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1
++ sed s/.*<latest>\([^<]*\)<\/latest>.*/\1/
++ grep latest
++ curl -s http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/maven-metadata.xml
++ version=3.30-SNAPSHOT
++ sed s/.*<value>\([^<]*\)<\/value>.*/\1/
++ head -1
++ grep <value>
++ curl -s http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/maven-metadata.xml
++ build=3.30-20180220.134559-2
++ jar=multi1-3.30-20180220.134559-2.jar
++ url=http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
++ echo http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
+http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
++ wget -q -N http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
+Jenkins Artifactory Plugin version: 2.14.0
+Artifactory integration is enabled
+[Deploy_Mavenproj] $ /usr/lib/jvm/java-8-oracle/bin/java -classpath /usr/local/apache-maven-3.5.2/boot/* -Dmaven.home=/usr/local/apache-maven-3.5.2 -DbuildInfoConfig.propertiesFile=/root/.jenkins/workspace/Deploy_Mavenproj/buildInfo3082897302119278530.properties -Dm3plugin.lib=/root/.jenkins/workspace/Deploy_Mavenproj/cache/artifactory-plugin/2.14.0 -Dclassworlds.conf=/root/.jenkins/workspace/Deploy_Mavenproj/classworlds3943294900111958027conf -Dmaven.multiModuleProjectDirectory=/root/.jenkins/workspace/Deploy_Mavenproj org.codehaus.plexus.classworlds.launcher.Launcher clean deploy
+[main] WARNING org.apache.maven.cli.configuration.SettingsXmlConfigurationProcessor - 
+[main] WARNING org.apache.maven.cli.configuration.SettingsXmlConfigurationProcessor - Some problems were encountered while building the effective settings
+[main] WARNING org.apache.maven.cli.configuration.SettingsXmlConfigurationProcessor - Expected root element 'settings' but found 'servers' (position: START_TAG seen <servers>... @1:9)  @ /root/.m2/settings.xml, line 1, column 9
+[main] WARNING org.apache.maven.cli.configuration.SettingsXmlConfigurationProcessor - 
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Scanning for projects...
+[main] INFO org.jfrog.build.extractor.maven.BuildInfoRecorder - Initializing Artifactory Build-Info Recording
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - BUILD FAILURE
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Total time: 0.239 s
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Finished at: 2018-02-20T19:49:12+05:30
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - Final Memory: 8M/60M
+[main] INFO org.apache.maven.cli.event.ExecutionEventLogger - ------------------------------------------------------------------------
+[main] ERROR org.apache.maven.cli.MavenCli - The goal you specified requires a project to execute but there is no POM in this directory (/root/.jenkins/workspace/Deploy_Mavenproj). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[main] ERROR org.apache.maven.cli.MavenCli - 
+[main] ERROR org.apache.maven.cli.MavenCli - To see the full stack trace of the errors, re-run Maven with the -e switch.
+[main] ERROR org.apache.maven.cli.MavenCli - Re-run Maven using the -X switch to enable full debug logging.
+[main] ERROR org.apache.maven.cli.MavenCli - 
+[main] ERROR org.apache.maven.cli.MavenCli - For more information about the errors and possible solutions, please read the following articles:
+[main] ERROR org.apache.maven.cli.MavenCli - [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+Build step 'Invoke Artifactory Maven 3' changed build result to FAILURE
+Build step 'Invoke Artifactory Maven 3' marked build as failure
+Finished: FAILURE

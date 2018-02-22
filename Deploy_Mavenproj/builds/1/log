@@ -1,0 +1,23 @@
+Started by user [8mha:////4LccMRqJAZfPyWON9fkRvYRX3weblyA6YXCrzWGAA+Q0AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9jMSizOIMAGkBSanBAAAA[0mharishvarma
+Building in workspace /root/.jenkins/workspace/Deploy_Mavenproj
+[Deploy_Mavenproj] $ /bin/sh -xe /opt/tomcat/tomcat9/temp/jenkins9070277917596903704.sh
++ server=http://192.168.58.201:8081/artifactory
++ repo=libs-snapshot-local
++ name=multi1
++ artifact=org/jfrog/test/multi1
++ path=http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1
++ sed s/.*<latest>\([^<]*\)<\/latest>.*/\1/
++ grep latest
++ curl -s http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/maven-metadata.xml
++ version=3.30-SNAPSHOT
++ sed s/.*<value>\([^<]*\)<\/value>.*/\1/
++ head -1
++ grep <value>
++ curl -s http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/maven-metadata.xml
++ build=3.30-20180220.134559-2
++ jar=multi1-3.30-20180220.134559-2.jar
++ url=http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
++ echo http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
+http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
++ wget -q -N http://192.168.58.201:8081/artifactory/libs-snapshot-local/org/jfrog/test/multi1/3.30-SNAPSHOT/multi1-3.30-20180220.134559-2.jar
+Finished: SUCCESS

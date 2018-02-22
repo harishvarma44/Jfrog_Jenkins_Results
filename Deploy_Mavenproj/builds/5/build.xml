@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>harish</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jfrog.hudson.BuildInfoResultAction plugin="artifactory@2.14.0">
+      <publishedBuildsDetails>
+        <org.jfrog.hudson.PublishedBuildDetails>
+          <artifactoryUrl>http://192.168.58.201:8081/artifactory</artifactoryUrl>
+          <buildName>Deploy_Mavenproj</buildName>
+          <buildNumber>5</buildNumber>
+        </org.jfrog.hudson.PublishedBuildDetails>
+      </publishedBuildsDetails>
+      <build class="build" reference="../../.."/>
+    </org.jfrog.hudson.BuildInfoResultAction>
+    <org.jfrog.hudson.release.promotion.UnifiedPromoteBuildAction plugin="artifactory@2.14.0">
+      <build class="build" reference="../../.."/>
+      <promotionCandidates>
+        <entry>
+          <string>0</string>
+          <org.jfrog.hudson.release.promotion.PromotionInfo>
+            <promotionConfig>
+              <buildName>Deploy_Mavenproj</buildName>
+              <buildNumber>5</buildNumber>
+              <includeDependencies>false</includeDependencies>
+              <copy>false</copy>
+              <failFast>true</failFast>
+            </promotionConfig>
+            <configurator class="org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator">
+              <details>
+                <artifactoryName>artifact</artifactoryName>
+                <artifactoryUrl>http://192.168.58.201:8081/artifactory</artifactoryUrl>
+                <deployReleaseRepository>
+                  <keyFromText></keyFromText>
+                  <keyFromSelect>libs-release-local</keyFromSelect>
+                  <dynamicMode>false</dynamicMode>
+                </deployReleaseRepository>
+                <deploySnapshotRepository>
+                  <keyFromText></keyFromText>
+                  <keyFromSelect>libs-snapshot-local</keyFromSelect>
+                  <dynamicMode>false</dynamicMode>
+                </deploySnapshotRepository>
+                <stagingPlugin/>
+              </details>
+              <resolverDetails>
+                <artifactoryName>artifact</artifactoryName>
+                <artifactoryUrl>http://192.168.58.201:8081/artifactory</artifactoryUrl>
+                <resolveSnapshotRepository>
+                  <keyFromText></keyFromText>
+                  <keyFromSelect></keyFromSelect>
+                  <dynamicMode>false</dynamicMode>
+                </resolveSnapshotRepository>
+                <resolveReleaseRepository>
+                  <keyFromText></keyFromText>
+                  <keyFromSelect></keyFromSelect>
+                  <dynamicMode>false</dynamicMode>
+                </resolveReleaseRepository>
+                <stagingPlugin/>
+              </resolverDetails>
+              <deployerCredentialsConfig>
+                <credentials>
+                  <username></username>
+                  <password></password>
+                </credentials>
+                <credentialsId></credentialsId>
+                <overridingCredentials>false</overridingCredentials>
+                <ignoreCredentialPluginDisabled>false</ignoreCredentialPluginDisabled>
+              </deployerCredentialsConfig>
+              <resolverCredentialsConfig>
+                <credentials>
+                  <username></username>
+                  <password></password>
+                </credentials>
+                <credentialsId></credentialsId>
+                <overridingCredentials>false</overridingCredentials>
+                <ignoreCredentialPluginDisabled>false</ignoreCredentialPluginDisabled>
+              </resolverCredentialsConfig>
+              <deployArtifacts>true</deployArtifacts>
+              <artifactDeploymentPatterns>
+                <includePatterns></includePatterns>
+                <excludePatterns></excludePatterns>
+              </artifactDeploymentPatterns>
+              <includeEnvVars>false</includeEnvVars>
+              <deployBuildInfo>true</deployBuildInfo>
+              <runChecks>false</runChecks>
+              <violationRecipients></violationRecipients>
+              <includePublishArtifacts>false</includePublishArtifacts>
+              <scopes></scopes>
+              <discardOldBuilds>false</discardOldBuilds>
+              <discardBuildArtifacts>true</discardBuildArtifacts>
+              <asyncBuildRetention>false</asyncBuildRetention>
+              <matrixParams></matrixParams>
+              <enableIssueTrackerIntegration>false</enableIssueTrackerIntegration>
+              <filterExcludedArtifactsFromBuild>true</filterExcludedArtifactsFromBuild>
+              <enableResolveArtifacts>false</enableResolveArtifacts>
+              <envVarsPatterns>
+                <includePatterns></includePatterns>
+                <excludePatterns>*password*,*secret*,*key*</excludePatterns>
+              </envVarsPatterns>
+              <licenseAutoDiscovery>true</licenseAutoDiscovery>
+              <disableLicenseAutoDiscovery>false</disableLicenseAutoDiscovery>
+              <aggregateBuildIssues>false</aggregateBuildIssues>
+              <recordAllDependencies>false</recordAllDependencies>
+              <blackDuckRunChecks>false</blackDuckRunChecks>
+              <blackDuckAppName></blackDuckAppName>
+              <blackDuckAppVersion></blackDuckAppVersion>
+              <blackDuckReportRecipients></blackDuckReportRecipients>
+              <blackDuckScopes></blackDuckScopes>
+              <blackDuckIncludePublishedArtifacts>false</blackDuckIncludePublishedArtifacts>
+              <autoCreateMissingComponentRequests>true</autoCreateMissingComponentRequests>
+              <autoDiscardStaleComponentRequests>true</autoDiscardStaleComponentRequests>
+              <customBuildName></customBuildName>
+              <overrideBuildName>false</overrideBuildName>
+            </configurator>
+            <id>0</id>
+          </org.jfrog.hudson.release.promotion.PromotionInfo>
+        </entry>
+      </promotionCandidates>
+      <currentPromotionCandidate reference="../promotionCandidates/entry/org.jfrog.hudson.release.promotion.PromotionInfo"/>
+      <useCopy>false</useCopy>
+      <failFast>true</failFast>
+      <includeDependencies>false</includeDependencies>
+    </org.jfrog.hudson.release.promotion.UnifiedPromoteBuildAction>
+    <org.jfrog.hudson.BintrayPublish.BintrayPublishAction plugin="artifactory@2.14.0">
+      <build class="build" reference="../../.."/>
+      <configurator class="org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator" reference="../../org.jfrog.hudson.release.promotion.UnifiedPromoteBuildAction/promotionCandidates/entry/org.jfrog.hudson.release.promotion.PromotionInfo/configurator"/>
+      <override>false</override>
+    </org.jfrog.hudson.BintrayPublish.BintrayPublishAction>
+  </actions>
+  <queueId>147</queueId>
+  <timestamp>1519199780946</timestamp>
+  <startTime>1519199780948</startTime>
+  <result>SUCCESS</result>
+  <duration>197</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/Deploy_Mavenproj</workspace>
+  <hudsonVersion>2.73</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
