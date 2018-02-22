@@ -1,0 +1,23 @@
+commit 9968da722fcfd162e177c3a77dd257341e6f6a83
+tree 27ebafbee4038451cbd53ad76871b4d6f40108c7
+parent 85b010b3804fa7098a7ef7f51bd8692e5edcffdb
+author Harish <harishvarma44@gmail.com> 2018-02-20 19:13:16 +0530
+committer Harish <harishvarma44@gmail.com> 2018-02-20 19:13:16 +0530
+
+    Commit for maven-java assembly plugin in pom.xml
+
+
+
+:100644 100644 248c03c4d3b2401643ab5d9d0bb21a723dad6701 7ff29cf570c129113c83527d743f8fbecb325ddf M	maven-example/pom.xml
+commit 85b010b3804fa7098a7ef7f51bd8692e5edcffdb
+tree f48c9327f4eaa33fbd27273c718462fe841365a9
+parent 2ddc5dde81c32000614d2aa00609d31aea53bfcb
+author Harish <harishvarma44@gmail.com> 2018-02-20 18:59:17 +0530
+committer Harish <harishvarma44@gmail.com> 2018-02-20 18:59:17 +0530
+
+    adasda
+
+
+
+:160000 000000 34bae3f8b2af9c5a6520c53949eda3c452900bd6 0000000000000000000000000000000000000000 D	Jfrog
+:100644 000000 ddb4d5d41b16e20642301a4127d31dabcc3e78e3 0000000000000000000000000000000000000000 D	maven-example/^C

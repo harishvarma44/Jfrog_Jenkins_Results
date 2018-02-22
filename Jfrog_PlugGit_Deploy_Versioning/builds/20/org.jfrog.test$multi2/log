@@ -1,0 +1,45 @@
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Multi 2 3.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ multi2 ---
+[INFO] Deleting /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2/target
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ multi2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2/src/main/resources
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ multi2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2/target/classes
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ multi2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2/src/test/resources
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ multi2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2/target/test-classes
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ multi2 ---
+[INFO] Surefire report directory: /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2/target/surefire-reports
+[INFO] Downloading from central: http://192.168.58.201:8081/artifactory/libs-release/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom
+[INFO] Downloaded from central: http://192.168.58.201:8081/artifactory/libs-release/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom (1.7 kB at 22 kB/s)
+[INFO] Downloading from central: http://192.168.58.201:8081/artifactory/libs-release/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar
+[INFO] Downloaded from central: http://192.168.58.201:8081/artifactory/libs-release/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar (26 kB at 1.7 MB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running artifactory.test.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ multi2 ---
+[INFO] Building jar: /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2/target/multi2-3.30-SNAPSHOT.jar

@@ -1,0 +1,21 @@
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Multi 3 3.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading from artifactory-release: http://192.168.58.201:8081/artifactory/libs-release/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom
+[INFO] Downloaded from artifactory-release: http://192.168.58.201:8081/artifactory/libs-release/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom (600 B at 55 kB/s)
+[INFO] Downloading from artifactory-release: http://192.168.58.201:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
+[INFO] Downloaded from artifactory-release: http://192.168.58.201:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom (157 B at 14 kB/s)
+[INFO] Downloading from artifactory-release: http://192.168.58.201:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
+[INFO] Downloaded from artifactory-release: http://192.168.58.201:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar (105 kB at 7.0 MB/s)
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ multi3 ---
+[INFO] Deleting /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi3/target
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ multi3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi3/src/main/resources
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ multi3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi3/target/classes

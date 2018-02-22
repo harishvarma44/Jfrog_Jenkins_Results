@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.1">
+  <actions>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@2.14.0">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.jfrog.test:multi:pom.xml</string>
+          <string>872060c1e73115cb609a4e2b3b9c4e52</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>org.jfrog.test</groupId>
+        <artifactId>multi</artifactId>
+        <version>3.28</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>multi-3.28.pom</canonicalName>
+        <md5sum>872060c1e73115cb609a4e2b3b9c4e52</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+    </hudson.maven.reporters.MavenArtifactRecord>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@2.14.0">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1519045216334</timestamp>
+  <startTime>1519045222812</startTime>
+  <result>SUCCESS</result>
+  <duration>1549</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example</workspace>
+  <executedMojos class="java.util.concurrent.CopyOnWriteArrayList">
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-install-plugin</artifactId>
+      <version>2.4</version>
+      <goal>install</goal>
+      <executionId>default-install</executionId>
+      <duration>491</duration>
+      <digest>f5bb3c264487db208f3fcd71c3208d7d</digest>
+    </hudson.maven.ExecutedMojo>
+  </executedMojos>
+</hudson.maven.MavenBuild>

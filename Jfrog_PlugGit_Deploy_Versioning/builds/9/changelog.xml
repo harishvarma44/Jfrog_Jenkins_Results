@@ -1,0 +1,25 @@
+commit a1ae02529b1fe02023295030f54bee2106de767a
+tree 45db17c8a5202c836abc96356b00f246528ef76d
+parent b74158c5815a4fe7ec0a22fa8077f7424276cf5f
+author asgdhjas <asgdhjas@gmail.com> 2018-02-19 17:26:49 +0530
+committer asgdhjas <asgdhjas@gmail.com> 2018-02-19 17:26:49 +0530
+
+    deploy3
+
+
+
+:100644 100644 83e8881f7b48b36afcd25df91de3bd73891b2043 f704e83fe847291e05212c02114d7725a01749f6 M	maven-example/multi1/target/multi1-3.28-SNAPSHOT-sources.jar
+:100644 100644 e61d7f681f33c549ccb5502dfd13e22132f71c98 510d1d1186fd15116b3b47e194ca1494bac70367 M	maven-example/multi1/target/multi1-3.28-SNAPSHOT-tests.jar
+:100644 100644 9b0f6ca805f2feb039cec8013e4b466a2c613e53 b4d6879b562d556bc8910f9e56431a84afcfd395 M	maven-example/multi1/target/multi1-3.28-SNAPSHOT.jar
+:100644 100644 723cbc3cb365357e92d3f6961e4a182f2befb073 3941be63bc13a368301acd809bb88ed097177bdd M	maven-example/multi1/target/surefire-reports/TEST-artifactory.test.AppTest.xml
+:100644 100644 d88aac6be4adef7eb2cea38d336a3bad4e72e4df 28305c2b52eb8b20de85a512bc957150b94effd8 M	maven-example/multi1/target/surefire-reports/artifactory.test.AppTest.txt
+:100644 100644 c3ad364fbbd9c4718f00778d2609e6e2bd937c2c b3cb136bbce0a407447213e69ebaa07a1f2b83fb M	maven-example/multi1/target/surefire-reports/artifactory.test.AppTest/Command line test.html
+:100644 100644 5352e8d553ff0618fe97bae8d82d8e9ff02f51b3 bfcd8aebd312c5cee584488a948c322fda905a7a M	maven-example/multi1/target/surefire-reports/artifactory.test.AppTest/Command line test.xml
+:100644 100644 dceee32b75d3b4eb6d8fa75d7a961def5ad66e68 f6d9f450caca9a767ace9fc4b9c0b9b938c3af4f M	maven-example/multi2/target/multi2-3.28-SNAPSHOT.jar
+:100644 100644 12533dd300b6755fee9e54c4ec54b6d4ad029808 b41a08301334b4888d0ab72560861f324171b224 M	maven-example/multi2/target/surefire-reports/TEST-artifactory.test.AppTest.xml
+:100644 100644 f1c2ee22d195901c7291593274dc24a09edf74c5 d55612318fd6a348bbb2b7d1a39b2c16d8f03173 M	maven-example/multi2/target/surefire-reports/artifactory.test.AppTest.txt
+:100644 100644 af1db76cedf9fbc11c69cc2fd2ca8f0a1e02ee88 6574fc6bdc649f2a504b5e50dc1b46a5b20cce01 M	maven-example/multi3/target/multi3-3.28-SNAPSHOT.war
+:100644 100644 9b0f6ca805f2feb039cec8013e4b466a2c613e53 b4d6879b562d556bc8910f9e56431a84afcfd395 M	maven-example/multi3/target/multi3-3.28-SNAPSHOT/WEB-INF/lib/multi1-3.28-SNAPSHOT.jar
+:100644 100644 12533dd300b6755fee9e54c4ec54b6d4ad029808 7023e33e2b72949ae2aa09d3adb142b1b5cf46aa M	maven-example/multi3/target/surefire-reports/TEST-artifactory.test.AppTest.xml
+:100644 100644 7964b0806bdee393976d4bcafa4c281a69ec28d6 3d3dc6dd96f9c36d735ee3b1985cb354a95fec2e M	maven-example/multi3/target/surefire-reports/artifactory.test.AppTest.txt
+:100644 100644 dbc62732de86cc3acfe190c0c24c0c640ea5f0e2 f0c3df97961c798fb31bdc9219b9bbf262c5643f M	maven-example/target/build-info.json

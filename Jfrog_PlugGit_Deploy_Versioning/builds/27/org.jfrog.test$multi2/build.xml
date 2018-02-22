@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.1">
+  <actions>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@2.14.0">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.jfrog.test:multi2:pom.xml</string>
+          <string>96483734e9612b12b0c9a358fcb5155c</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>org.jfrog.test</groupId>
+        <artifactId>multi2</artifactId>
+        <version>3.30-SNAPSHOT</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>multi2-3.30-SNAPSHOT.pom</canonicalName>
+        <md5sum>96483734e9612b12b0c9a358fcb5155c</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+      <repositoryId>snapshots</repositoryId>
+      <repositoryUrl>http://192.168.58.201:8081/artifactory/libs-snapshot-local</repositoryUrl>
+    </hudson.maven.reporters.MavenArtifactRecord>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@2.14.0">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1519209954889</timestamp>
+  <startTime>1519209974891</startTime>
+  <result>SUCCESS</result>
+  <duration>665</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi2</workspace>
+  <executedMojos class="java.util.concurrent.CopyOnWriteArrayList">
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-clean-plugin</artifactId>
+      <version>2.5</version>
+      <goal>clean</goal>
+      <executionId>default-clean</executionId>
+      <duration>26</duration>
+      <digest>9a18e4d3f6e6495ed92b7d4694b41e66</digest>
+    </hudson.maven.ExecutedMojo>
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-resources-plugin</artifactId>
+      <version>2.6</version>
+      <goal>resources</goal>
+      <executionId>default-resources</executionId>
+      <duration>1</duration>
+      <digest>e7cc4bbb6888e6c9dd5acdad08cf4bd3</digest>
+    </hudson.maven.ExecutedMojo>
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.1</version>
+      <goal>compile</goal>
+      <executionId>default-compile</executionId>
+      <duration>189</duration>
+      <digest>4a14a33ab69db9dadfb4d41449ebc651</digest>
+    </hudson.maven.ExecutedMojo>
+  </executedMojos>
+</hudson.maven.MavenBuild>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.1">
+  <actions>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>org.jfrog.test</groupId>
+        <artifactId>multi1</artifactId>
+        <version>3.28-SNAPSHOT</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>multi1-3.28-SNAPSHOT.pom</canonicalName>
+        <md5sum>d902a068a1f5726184ede18e26fe417e</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+      <repositoryId>snapshots</repositoryId>
+      <repositoryUrl>http://192.168.58.201:8081/artifactory/libs-snapshot-local</repositoryUrl>
+    </hudson.maven.reporters.MavenArtifactRecord>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@2.14.0">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.jfrog.test:multi:multi-3.28-SNAPSHOT.pom</string>
+          <string>08e3b5886c544ec18a13ea327be8dbe2</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1519037052955</timestamp>
+  <startTime>1519037068732</startTime>
+  <result>NOT_BUILT</result>
+  <duration>1</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/Jfrog_PlugGit_Deploy_Versioning/maven-example/multi1</workspace>
+</hudson.maven.MavenBuild>

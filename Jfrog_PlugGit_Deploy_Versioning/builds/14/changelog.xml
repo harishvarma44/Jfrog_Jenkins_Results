@@ -1,0 +1,14 @@
+commit 2ddc5dde81c32000614d2aa00609d31aea53bfcb
+tree 439b8ae48c49872655395a8e08bf5537c77bc0c5
+parent 457601f50d24b06cf5718a5190ba54e20dfd6223
+author Harish <harishvarma44@gmail.com> 2018-02-19 18:34:59 +0530
+committer Harish <harishvarma44@gmail.com> 2018-02-19 18:34:59 +0530
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 10378439aee41a495bc0e76ad65b7fab1bf36fd7 677ac160131a8e76b7c6fc2a7e024ed648b6f058 M	maven-example/multi1/pom.xml
+:100644 100644 a7e53dc18a76f571e8bd55c5f96ec4245f7684c3 26fea421cad0d79ea5df86ce82fac0c179ea47d9 M	maven-example/multi2/pom.xml
+:100644 100644 cce20558abffbe172c7b60446d8ebda04d9826c1 d2d6b5d63f1ed469528d80cadbc183ab18ebf714 M	maven-example/multi3/pom.xml
+:100644 100644 1d676b08ba439fc913db3408ffd5158532f001a0 248c03c4d3b2401643ab5d9d0bb21a723dad6701 M	maven-example/pom.xml
