@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenModuleSetBuild plugin="maven-plugin@3.1">
+  <actions>
+    <org.jfrog.hudson.BuildInfoResultAction plugin="artifactory@2.14.0">
+      <publishedBuildsDetails>
+        <org.jfrog.hudson.PublishedBuildDetails>
+          <artifactoryUrl>http://192.168.58.201:8081/artifactory</artifactoryUrl>
+          <buildName>Maven-Jfrog-Versioning</buildName>
+          <buildNumber>55</buildNumber>
+        </org.jfrog.hudson.PublishedBuildDetails>
+      </publishedBuildsDetails>
+      <build class="hudson.maven.MavenModuleSetBuild" reference="../../.."/>
+    </org.jfrog.hudson.BuildInfoResultAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>harish</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.7.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.1">
+              <sha1>399e98dad068965baf982c8c1725912fe15e3dc1</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>55</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/harishvarma44/Jfrog1.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.7.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/root/.jenkins/workspace/Maven-Jfrog-Versioning</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.maven.reporters.MavenAggregatedArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+    </hudson.maven.reporters.MavenAggregatedArtifactRecord>
+    <hudson.maven.reporters.SurefireAggregatedReport>
+      <descriptions class="concurrent-hash-map"/>
+      <failCount>0</failCount>
+      <skipCount>0</skipCount>
+      <totalCount>2</totalCount>
+      <children>
+        <hudson.tasks.test.AggregatedTestResultAction_-Child plugin="junit@1.23">
+          <name>org.jfrog.test:multi1</name>
+          <build>55</build>
+        </hudson.tasks.test.AggregatedTestResultAction_-Child>
+        <hudson.tasks.test.AggregatedTestResultAction_-Child plugin="junit@1.23">
+          <name>org.jfrog.test:multi2</name>
+          <build>55</build>
+        </hudson.tasks.test.AggregatedTestResultAction_-Child>
+        <hudson.tasks.test.AggregatedTestResultAction_-Child plugin="junit@1.23">
+          <name>org.jfrog.test:multi3</name>
+          <build>55</build>
+        </hudson.tasks.test.AggregatedTestResultAction_-Child>
+      </children>
+    </hudson.maven.reporters.SurefireAggregatedReport>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>javax.servlet.jsp:jsp-api-2.1.jar</string>
+          <string>b8a34113a3a1ce29c8c60d7141f5a704</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi:pom.xml</string>
+          <string>08e3b5886c544ec18a13ea327be8dbe2</string>
+        </entry>
+        <entry>
+          <string>commons-io:commons-io-1.4.jar</string>
+          <string>b6a50c8a15ece8753e37cbe5700bf84f</string>
+        </entry>
+        <entry>
+          <string>junit:junit-3.8.1.jar</string>
+          <string>1f40fb782a4f2cf78f161d32670f7a3a</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi3-3.28-SNAPSHOT.war</string>
+          <string>edb6dc5dfc86d5174c0c6980dff288ba</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi:multi-3.28-SNAPSHOT.pom</string>
+          <string>08e3b5886c544ec18a13ea327be8dbe2</string>
+        </entry>
+        <entry>
+          <string>org.testng:testng-5.9-jdk15.jar</string>
+          <string>52537a8a5231ca74518aec08434df7eb</string>
+        </entry>
+        <entry>
+          <string>hsqldb:hsqldb-1.8.0.10.jar</string>
+          <string>7df83e09e41d742cc5fb20d16b80729c</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi1-3.28-SNAPSHOT.jar</string>
+          <string>958107b514b4f5691920d7a9b7c5ec7c</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi1-3.28-SNAPSHOT-tests.jar</string>
+          <string>8ff591e748318443779f99400fc69e80</string>
+        </entry>
+        <entry>
+          <string>javax.mail:mail-1.4.jar</string>
+          <string>2e64a3805d543bdb86e6e5eeca5529f8</string>
+        </entry>
+        <entry>
+          <string>org.codehaus.plexus:plexus-utils-1.5.1.jar</string>
+          <string>2a666534a425add50d017d4aa06a6fca</string>
+        </entry>
+        <entry>
+          <string>javax.activation:activation-1.1.jar</string>
+          <string>8ae38e87cd4f86059c0294a8fe3e0b18</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-aop-2.5.6.jar</string>
+          <string>036c65b02a789306fbadd3c330f1e055</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi3:pom.xml</string>
+          <string>9f97ec228e3b140f1178610d1e844aa3</string>
+        </entry>
+        <entry>
+          <string>aopalliance:aopalliance-1.0.jar</string>
+          <string>04177054e180d09e3998808efa0401c7</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi1-3.28-SNAPSHOT-sources.jar</string>
+          <string>887d2fd471685cd3c9b049ac00142a7d</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi2:pom.xml</string>
+          <string>a68cafac04bd2dbc1bddc6c4f02e6f11</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-core-2.5.6.jar</string>
+          <string>378db2cc1fbdd9ed05dff2dc1023963e</string>
+        </entry>
+        <entry>
+          <string>org.springframework:spring-beans-2.5.6.jar</string>
+          <string>25c0752852205167af8f31a1eb019975</string>
+        </entry>
+        <entry>
+          <string>javax.servlet:servlet-api-2.5.jar</string>
+          <string>69ca51af4e9a67a1027a7f95b52c3e8f</string>
+        </entry>
+        <entry>
+          <string>org.apache.commons:commons-email-1.1.jar</string>
+          <string>5d6576b5b572c6d644af2924da9a1952</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi2-3.28-SNAPSHOT.jar</string>
+          <string>7e740e5e63f219d10716075d8ad3b623</string>
+        </entry>
+        <entry>
+          <string>org.jfrog.test:multi1:pom.xml</string>
+          <string>d902a068a1f5726184ede18e26fe417e</string>
+        </entry>
+        <entry>
+          <string>commons-logging:commons-logging-1.1.1.jar</string>
+          <string>ed448347fc0104034aa14c8189bf37de</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>114</queueId>
+  <timestamp>1519044392352</timestamp>
+  <startTime>1519044392353</startTime>
+  <result>SUCCESS</result>
+  <duration>35365</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/Maven-Jfrog-Versioning</workspace>
+  <hudsonVersion>2.73</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.7.0">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+  <mavenVersionUsed>3.5.2</mavenVersionUsed>
+</hudson.maven.MavenModuleSetBuild>

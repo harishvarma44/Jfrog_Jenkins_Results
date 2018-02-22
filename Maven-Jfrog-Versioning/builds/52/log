@@ -1,0 +1,81 @@
+Started by user [8mha:////4LccMRqJAZfPyWON9fkRvYRX3weblyA6YXCrzWGAA+Q0AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9jMSizOIMAGkBSanBAAAA[0mharishvarma
+Building in workspace /root/.jenkins/workspace/Maven-Jfrog-Versioning
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/harishvarma44/Jfrog1.git # timeout=10
+Fetching upstream changes from https://github.com/harishvarma44/Jfrog1.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/harishvarma44/Jfrog1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 399e98dad068965baf982c8c1725912fe15e3dc1 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 399e98dad068965baf982c8c1725912fe15e3dc1
+Commit message: "deploy3"
+ > git rev-list --no-walk 399e98dad068965baf982c8c1725912fe15e3dc1 # timeout=10
+[RELEASE] Release build triggered
+ > git config --get remote.origin.url # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -b REL-BRANCH-multi-3.28
+[Maven-Jfrog-Versioning] $ /bin/sh -xe /opt/tomcat/tomcat9/temp/jenkins1190251815172536426.sh
++ scp -rp /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/ /root/Jfrog-Project.git/project-examples/
+ERROR: Processing failed due to a bug in the code. Please report this to the issue tracker (https://jenkins.io/redirect/report-an-issue).
+[8mha:////4DyHXx75z2v9ecGCaWS+e5DGnGu7v+cJyLT7lc3zRDEbAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mhudson.plugins.git.GitException: Could not checkout REL-BRANCH-multi-3.28 with start point null
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$9.execute(CliGitAPIImpl.java:2317)
+	at org.jenkinsci.plugins.gitclient.AbstractGitAPIImpl.checkout(AbstractGitAPIImpl.java:76)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.checkout(CliGitAPIImpl.java:72)
+	at hudson.plugins.git.GitAPI.checkout(GitAPI.java:227)
+	at org.jfrog.hudson.release.scm.git.GitManager.checkoutBranch(GitManager.java:67)
+	at org.jfrog.hudson.release.scm.git.GitCoordinator.beforeReleaseVersionChange(GitCoordinator.java:65)
+	at org.jfrog.hudson.release.maven.MavenReleaseWrapper.setUp(MavenReleaseWrapper.java:167)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.doRun(MavenModuleSetBuild.java:667)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:490)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:543)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:419)
+Caused by: hudson.plugins.git.GitException: Command "git checkout -b REL-BRANCH-multi-3.28" returned status code 128:
+stdout: 
+stderr: fatal: A branch named 'REL-BRANCH-multi-3.28' already exists.
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1996)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$800(CliGitAPIImpl.java:72)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$9.execute(CliGitAPIImpl.java:2295)
+	... 12 more
+project=hudson.maven.MavenModuleSet@4f9b52f5[Maven-Jfrog-Versioning]
+project.getModules()=[hudson.maven.MavenModule@548da506[Maven-Jfrog-Versioning/org.jfrog.test:multi][Maven-Jfrog-Versioning/org.jfrog.test:multi][relativePath:maven-example], hudson.maven.MavenModule@5a7e7f8c[Maven-Jfrog-Versioning/org.jfrog.test:multi1][Maven-Jfrog-Versioning/org.jfrog.test:multi1][relativePath:maven-example/multi1], hudson.maven.MavenModule@46612a6f[Maven-Jfrog-Versioning/org.jfrog.test:multi2][Maven-Jfrog-Versioning/org.jfrog.test:multi2][relativePath:maven-example/multi2], hudson.maven.MavenModule@64954080[Maven-Jfrog-Versioning/org.jfrog.test:multi3][Maven-Jfrog-Versioning/org.jfrog.test:multi3][relativePath:maven-example/multi3]]
+project.getRootModule()=hudson.maven.MavenModule@548da506[Maven-Jfrog-Versioning/org.jfrog.test:multi][Maven-Jfrog-Versioning/org.jfrog.test:multi][relativePath:maven-example]
+FATAL: Could not checkout REL-BRANCH-multi-3.28 with start point null
+[8mha:////4DyHXx75z2v9ecGCaWS+e5DGnGu7v+cJyLT7lc3zRDEbAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mhudson.plugins.git.GitException: Command "git checkout -b REL-BRANCH-multi-3.28" returned status code 128:
+stdout: 
+stderr: fatal: A branch named 'REL-BRANCH-multi-3.28' already exists.
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1996)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$800(CliGitAPIImpl.java:72)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$9.execute(CliGitAPIImpl.java:2295)
+Caused: hudson.plugins.git.GitException: Could not checkout REL-BRANCH-multi-3.28 with start point null
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$9.execute(CliGitAPIImpl.java:2317)
+	at org.jenkinsci.plugins.gitclient.AbstractGitAPIImpl.checkout(AbstractGitAPIImpl.java:76)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.checkout(CliGitAPIImpl.java:72)
+	at hudson.plugins.git.GitAPI.checkout(GitAPI.java:227)
+	at org.jfrog.hudson.release.scm.git.GitManager.checkoutBranch(GitManager.java:67)
+	at org.jfrog.hudson.release.scm.git.GitCoordinator.beforeReleaseVersionChange(GitCoordinator.java:65)
+	at org.jfrog.hudson.release.maven.MavenReleaseWrapper.setUp(MavenReleaseWrapper.java:167)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.doRun(MavenModuleSetBuild.java:667)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:490)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:543)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:419)
+Build did not succeed and the project is configured to only push after a successful build, so no pushing will occur.
+ > git config --get remote.origin.url # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f master
+ > git config --get remote.origin.url # timeout=10
+[RELEASE] Reverting git working copy (reset --hard)
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+Finished: FAILURE

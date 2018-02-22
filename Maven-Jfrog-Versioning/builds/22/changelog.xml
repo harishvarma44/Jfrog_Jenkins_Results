@@ -1,0 +1,11 @@
+commit 290658e8f4b968e570add2fb8fe472f61d38ce3a
+tree 806f79427529cb784446cf858a78da39ace349ee
+parent b3c435d93410fc31826750a42f69361c1e1ae7a7
+author Harish <harishvarma44@gmail.com> 2018-02-15 18:48:24 +0530
+committer Harish <harishvarma44@gmail.com> 2018-02-15 18:48:24 +0530
+
+    DEployable pom.xml for direct build
+
+
+
+:100644 100755 ddb4d5d41b16e20642301a4127d31dabcc3e78e3 1bd68000e99a01f9a625861d4d7af71538b30a43 M	maven-example/pom.xml

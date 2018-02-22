@@ -1,0 +1,27 @@
+Started by user [8mha:////4LccMRqJAZfPyWON9fkRvYRX3weblyA6YXCrzWGAA+Q0AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9jMSizOIMAGkBSanBAAAA[0mharishvarma
+Building in workspace /root/.jenkins/workspace/Maven-Jfrog-Versioning
+Cloning the remote Git repository
+Cloning repository https://github.com/harishvarma44/Jfrog.git
+ > git init /root/.jenkins/workspace/Maven-Jfrog-Versioning # timeout=10
+Fetching upstream changes from https://github.com/harishvarma44/Jfrog.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/harishvarma44/Jfrog.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/harishvarma44/Jfrog.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/harishvarma44/Jfrog.git # timeout=10
+Fetching upstream changes from https://github.com/harishvarma44/Jfrog.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/harishvarma44/Jfrog.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 45079ceb41a24465819f599413a8eb4c47c754ab (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 45079ceb41a24465819f599413a8eb4c47c754ab
+Commit message: "Merge branch 'master' of https://github.com/harishvarma44/Jfrog"
+First time build. Skipping changelog.
+Jenkins Artifactory Plugin version: 2.14.0
+Parsing POMs
+ERROR: No such file /root/.jenkins/workspace/Maven-Jfrog-Versioning/project-examples/maven-example/pom.xml
+Perhaps you need to specify the correct POM file path in the project configuration?
+[8mha:////4DyHXx75z2v9ecGCaWS+e5DGnGu7v+cJyLT7lc3zRDEbAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

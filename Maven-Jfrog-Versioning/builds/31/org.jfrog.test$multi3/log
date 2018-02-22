@@ -1,0 +1,50 @@
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Multi 3 3.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ multi3 ---
+[INFO] Deleting /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/target
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ multi3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/src/main/resources
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ multi3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/target/classes
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ multi3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/src/test/resources
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ multi3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/target/test-classes
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ multi3 ---
+[INFO] Surefire report directory: /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running artifactory.test.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.4:war (default-war) @ multi3 ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [multi3] in [/root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/target/multi3-3.28-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/src/main/webapp]
+[INFO] Webapp assembled in [91 msecs]
+[INFO] Building war: /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/target/multi3-3.28-SNAPSHOT.war
+[INFO] 
+[8mha:////4LSYKqvQTGzVitKhIA1uMhtCS9cIZuQPvZ2dtIrT3LelAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ multi3 ---
+[INFO] Installing /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/target/multi3-3.28-SNAPSHOT.war to /root/.jenkins/workspace/Maven-Jfrog-Versioning/.repository/org/jfrog/test/multi3/3.28-SNAPSHOT/multi3-3.28-SNAPSHOT.war
+[INFO] Installing /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/multi3/pom.xml to /root/.jenkins/workspace/Maven-Jfrog-Versioning/.repository/org/jfrog/test/multi3/3.28-SNAPSHOT/multi3-3.28-SNAPSHOT.pom

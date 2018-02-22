@@ -1,0 +1,10 @@
+Started on 16 Feb, 2018 6:27:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 80406794ed866d30005a4ac05e9d04925da70577 (refs/remotes/origin/master)
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/harishvarma44/Jfrog1.git # timeout=10
+Found 3 remote heads on https://github.com/harishvarma44/Jfrog1.git
+[poll] Latest remote head revision on refs/heads/master is: 4a500ed78ba0c74012c32dbdfce2f2688c276994
+Done. Took 1.5 sec
+Changes found

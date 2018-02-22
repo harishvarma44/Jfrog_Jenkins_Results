@@ -1,0 +1,66 @@
+Started by an SCM change
+Building in workspace /root/.jenkins/workspace/Maven-Jfrog-Versioning
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/harishvarma44/Jfrog1.git # timeout=10
+Fetching upstream changes from https://github.com/harishvarma44/Jfrog1.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/harishvarma44/Jfrog1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 290658e8f4b968e570add2fb8fe472f61d38ce3a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 290658e8f4b968e570add2fb8fe472f61d38ce3a
+Commit message: "DEployable pom.xml for direct build"
+ > git rev-list --no-walk b3c435d93410fc31826750a42f69361c1e1ae7a7 # timeout=10
+Jenkins Artifactory Plugin version: 2.14.0
+Parsing POMs
+ERROR: Failed to parse POMs
+[8mha:////4DyHXx75z2v9ecGCaWS+e5DGnGu7v+cJyLT7lc3zRDEbAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0morg.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Malformed POM /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/pom.xml: Expected root element 'project' but found 'settings' (position: START_TAG seen .../1.1.0"\n    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">... @3:59)  @ /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/pom.xml, line 3, column 59
+[FATAL] 'groupId' is missing. @ line 3, column 59
+[FATAL] 'artifactId' is missing. @ line 3, column 59
+[FATAL] 'version' is missing. @ line 3, column 59
+
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:364)
+	at hudson.maven.MavenEmbedder.buildProjects(MavenEmbedder.java:361)
+	at hudson.maven.MavenEmbedder.readProjects(MavenEmbedder.java:331)
+	at hudson.maven.MavenModuleSetBuild$PomParser.invoke(MavenModuleSetBuild.java:1328)
+	at hudson.maven.MavenModuleSetBuild$PomParser.invoke(MavenModuleSetBuild.java:1125)
+	at hudson.FilePath.act(FilePath.java:998)
+	at hudson.FilePath.act(FilePath.java:976)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.parsePoms(MavenModuleSetBuild.java:986)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.doRun(MavenModuleSetBuild.java:691)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:490)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:543)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:419)
+[Maven-Jfrog-Versioning] $ /bin/sh -xe /opt/tomcat/tomcat9/temp/jenkins5491466558156503155.sh
++ scp -rp /root/.jenkins/workspace/Maven-Jfrog-Versioning/maven-example/ /root/Jfrog-Project.git/project-examples/
++ cd /root/Jfrog-Project.git/project-examples
++ git add .
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'myfile2' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
++ git commit -m New commit .
+[master 8c69c22] New commit
+ 3 files changed, 63 insertions(+), 70 deletions(-)
+ rewrite maven-example/pom.xml (98%)
+ mode change 100644 => 100755
+ delete mode 100644 myfile2
+ delete mode 100644 mytouch
++ git push origin master
+fatal: could not read Username for 'https://github.com': Input/output error
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
